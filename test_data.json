@@ -1,0 +1,54 @@
+{
+  "default_map": {
+    "bank2": {
+      "region_type": "memory"
+    }, 
+    "bank1": {
+      "region_type": "register_block", 
+      "register_block_type" : "basic_registers"
+    },
+    "bank3": {
+      "region_type": "register_block", 
+      "register_block_type" : "basic_registers"
+    }
+  },
+  "register_blocks": {  
+    "basic_registers": {
+        "registers": {
+        "status": { 
+          "fields" : { 
+            "field1" : {
+              "lsb" : 5,
+              "width" : 4
+              },
+            "status2" : {
+              "lsb" : 0,
+              "width" : 1
+              },
+            "status3" : {
+              "lsb" : 10,
+              "width" : 5
+            }
+          }
+        }, 
+        "ctrl": {
+          "fields": {
+            "start" : {
+              "lsb" : 0,
+              "width" : 1
+              },
+            "stop" : {
+              "lsb" : 1,
+              "width" : 1
+              },
+            "reset" : {
+              "lsb" : 2,
+              "width" : 1
+              }
+          }
+
+        }
+      }
+    }
+  }
+}
